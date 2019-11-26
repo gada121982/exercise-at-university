@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 0.25fr 3.8fr;
+  width: 41%;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  width: fit-content;
+}
+
+.nav-bar {
+  background-color: #336799;
+  width: 100%;
+}
+.nav-bar a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin-left: 5%;
+}
+.nav-bar a::before {
+  content: "";
+  background-color: white;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: 120%;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 1fr;
+  width: 100%;
+}
+
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: #669acc;
+}
+.list-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-infor a:nth-child(2) {
+  transform: translateY(-10px);
+}
+.list-infor a:nth-child(3) {
+  transform: translateY(-20px);
+}
+.list-infor a:nth-child(4) {
+  transform: translateY(-30px);
+}
+.list-infor a:nth-child(5) {
+  transform: translateY(-40px);
+}
+.list-infor a:nth-child(6) {
+  transform: translateY(-50px);
+}
+.list-infor a:nth-child(7) {
+  transform: translateY(-60px);
+}
+.list-infor a:nth-child(8) {
+  transform: translateY(-70px);
+}
+.aside-left img:nth-child(2) {
+  transform: translateY(-55px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.aside-left img:nth-child(3) {
+  transform: translateY(-35px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-content {
+  border: 1px solid rgb(39, 38, 38);
+  width: fit-content;
+  margin-left: 5px;
+}
+.top-news {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.top-news h4 {
+  text-align: center;
+  margin: auto 0;
+}
+.top-img {
+  display: flex;
+}
+
+.list-news h4 {
+  font-weight: 600;
+  margin: 3% 0 3% 0.5%;
+}
+
+.new {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  width: fit-content;
+  margin-bottom: 5%;
+}
+.new img {
+  margin-left: 2.3%;
+}
+.description {
+  text-align: left;
+}
+
+.aside-right {
+  text-align: center;
+  background-color: #669acc;
+}
+.aside-right img {
+  margin-bottom: 3%;
+}
