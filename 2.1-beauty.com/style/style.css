@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main-section {
+  width: 90%;
+}
+.main-layout {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 40vh;
+  margin-top: 10%;
+  position: relative;
+}
+.main-layout::before {
+  content: url("../img/BEAUTY.jpg");
+  position: absolute;
+  top: -19%;
+  left: 50%;
+}
+.layout-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.layout-1 img:nth-child(1) {
+  margin-left: auto;
+}
+.layout-1 img:nth-child(2) {
+  margin-right: auto;
+}
+
+.layout-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.layout-2 img:nth-child(1) {
+  margin-left: auto;
+}
+.middle-about-news-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: auto;
+}
+.beside-layout2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 50%;
+}
+.beside-layout2 img:nth-child(1) {
+  margin-left: 0;
+}
+
+.layout-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  transform: translateY(-5px);
+}
+.layout-3 img:nth-child(1) {
+  margin-left: auto;
+}
+.middle-faq-contact-sitemap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: auto;
+}
+.beside-layout3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 50%;
+}
+.beside-layout3 img:nth-child(1) {
+  margin-left: 0;
+}
+.layout-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  transform: translateY(-8px);
+}
+.layout-4 img:nth-child(1) {
+  margin-left: auto;
+}
+.layout-4 img:nth-child(2) {
+  margin-right: auto;
+}
